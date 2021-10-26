@@ -13,11 +13,7 @@ function PopupWithForm(props) {
           type="button"
           id="btnClose"
         ></button>
-        <form
-          className={`form form_type_${props.name}`}
-          name={props.name}
-          noValidate
-        >
+        <form className={`form form_type_${props.name}`} name={props.name}>
           <h2 className="form__header">{props.header}</h2>
           <fieldset className="form__set">
             {props.children}

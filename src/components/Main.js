@@ -8,11 +8,14 @@ function Main(props) {
   const [userAvatar, setUserAvatar] = React.useState("");
 
   React.useEffect(() => {
-    api.getUserInfo().then((res) => {
-      setUserName(res.name);
-      setUserDescription(res.about);
-      setUserAvatar(res.avatar);
-    });
+    api
+      .getUserInfo()
+      .then((res) => {
+        setUserName(res.name);
+        setUserDescription(res.about);
+        setUserAvatar(res.avatar);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   const [cards, setCards] = React.useState([]);
@@ -28,41 +31,6 @@ function Main(props) {
 
   return (
     <main className="main">
-      <div className="popup popup_type_image">
-        <div className="popup__container">
-          <button
-            onClick={props.onCardClick}
-            className="popup__close popup__close_type_image"
-            type="button"
-          ></button>
-          <figure className="popup__figure">
-            <img className="popup__image" src="." alt="." />
-            <figcaption className="popup__caption"></figcaption>
-          </figure>
-        </div>
-      </div>
-
-      {/* <div className="popup popup_type_delete-card">
-        <div className="popup__form">
-          <button
-            className="popup__close popup__close_type_delete-card"
-            type="button"
-          ></button>
-          <form className="form" name="formDeleteCard" novalidate>
-            <h2 className="form__header">Are you sure?</h2>
-            <fieldset className="form__set">
-              <button
-                aria-label="submit"
-                className="form__button form__button_type_delete-card"
-                type="submit"
-              >
-                Yes
-              </button>
-            </fieldset>
-          </form>
-        </div>
-      </div> */}
-
       <section className="profile">
         <div
           className="profile__avatar"

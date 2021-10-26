@@ -15,7 +15,8 @@ function Card(props) {
       >
         <img
           className="element__item"
-          style={{ backgroundImage: `url(${props.card.link})` }}
+          src={props.card.link}
+          alt={props.card.name}
         />
       </button>
       <button
