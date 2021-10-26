@@ -43,4 +43,4 @@
 - Api requests.
 - components and props.
 
-## Link to GitHub pages: https://zemira-k.github.io/Around_React/
+## Link to GitHub pages: https://zemira-k.github.io/around_react/
