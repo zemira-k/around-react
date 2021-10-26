@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## Around React - Zemira Kehati
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name: Around React
 
-## Available Scripts
+### Project description and its functionality:
 
-In the project directory, you can run:
+- When you open the project, you can see the main page, that includes: header - logo, footer - copyright, main content - avatar image with name and job description, and an array of images of places and discription.
+- There are a few elements you can click on:
 
-### `npm start`
+1. Edit button - opens form to edit profile name and description.
+2. Edit profile - opens form for editing the profile picture. This button will only appear when the mouse hovers on the image.
+3. Add button - opens form to add a place card with image and description.
+4. Clicking on an image will open a popup window with a large image.
+5. Api request for:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Loading User Information from the Server,
+- Loading Cards from the Server
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Technologies and techniques used:
 
-### `npm test`
+- BEM metodologi.
+- Popup windows.
+- Classes in JS.
+- import and export.
+- Infrastructural project files are created using CRA
+- Api requests.
+- components and props.
+- hooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### In css I used -
 
-### `npm run build`
+- Percentage width for block classes, so the page will be responsive.
+- Grid for the six elements of images. Arranged them with grid-template-column, grid-template-rows and grid gap.
+- Media queries for breaking points.
+- The pseudo class "hover" for all the links.
+- Transition for opening and closing forms images etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### In JSX I used -
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Function for opening and closing popups.
+- setState useState onClick.
+- handle events.
+- Api requests.
+- components and props.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Link to GitHub pages: https://zemira-k.github.io/Around_React/
