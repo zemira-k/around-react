@@ -13,16 +13,19 @@ function PopupWithForm(props) {
           type="button"
           id="btnClose"
         ></button>
-        <form className={`form form_type_${props.name}`} name={props.name}>
+        <form
+          onSubmit={props.onSubmit}
+          className={`form form_type_${props.name}`}
+          name={props.name}
+        >
           <h2 className="form__header">{props.header}</h2>
           <fieldset className="form__set">
             {props.children}
             <button
               aria-label="submit"
-              className={`form__button form__button_type_${props.name} form__button_disabled`}
+              className={`form__button form__button_type_${props.name}`}
               type="submit"
               id="submit"
-              disabled
               value={props.buttonTitle}
             >
               {props.buttonTitle}

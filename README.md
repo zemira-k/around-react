@@ -11,10 +11,16 @@
 2. Edit profile - opens form for editing the profile picture. This button will only appear when the mouse hovers on the image.
 3. Add button - opens form to add a place card with image and description.
 4. Clicking on an image will open a popup window with a large image.
-5. Api request for:
+5. Clicking on heart icon will Like or Dislike an image.
+6. Clicking on trash icon will delete an image.
+7. Api request for:
 
 - Loading User Information from the Server,
-- Loading Cards from the Server
+- Loading Cards from the Server.
+- Add likes.
+- Delete card.
+- Edit profile data and avatar image.
+- Add a new card.
 
 ### Technologies and techniques used:
 
@@ -26,6 +32,8 @@
 - Api requests.
 - components and props.
 - hooks
+- context object and provider.
+- ref
 
 ### In css I used -
 
@@ -42,5 +50,7 @@
 - handle events.
 - Api requests.
 - components and props.
+- context object and provider.
+- ref
 
 ## Link to GitHub pages: https://zemira-k.github.io/around_react/
