@@ -1,12 +1,9 @@
 import React from "react";
 import PopupWithForm from "./PopupWithForm";
-import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 function AddPlacePopup(props) {
-  const currentUser = React.useContext(CurrentUserContext);
-  const [name, setName] = React.useState(" ");
-  const [link, setLink] = React.useState(" ");
-
+  const [name, setName] = React.useState("");
+  const [link, setLink] = React.useState("");
   function handleChangeName(e) {
     setName(e.target.value);
   }
@@ -21,6 +18,9 @@ function AddPlacePopup(props) {
       name: name,
       link: link,
     });
+    props.onClose();
+    setName("");
+    setLink("");
   }
 
   return (
@@ -44,6 +44,7 @@ function AddPlacePopup(props) {
           maxLength="30"
           required
           pattern=".*\S.*"
+          value={name}
         />
         <span
           className="form__input-error form__input-error_type_title form__input-error_active"
@@ -57,6 +58,7 @@ function AddPlacePopup(props) {
           id="formLink"
           placeholder="Image link"
           required
+          value={link}
         />
         <span
           className="form__input-error form__input-error_type_img-link form__input-error_active"

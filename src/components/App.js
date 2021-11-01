@@ -42,7 +42,6 @@ function App() {
       .addCard(data)
       .then((newCard) => {
         setCards([newCard, ...cards]);
-        closeAllPopups();
       })
       .catch((err) => console.log(err));
   }
